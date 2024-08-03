@@ -6,15 +6,12 @@ export default function ContactForm() {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [error, setError] = useState([]);
+  const [error, setError] = useState<string[]>([]);
   const [success, setSuccess] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    console.log("Full name: ", fullname);
-    console.log("Email: ", email);
-    console.log("Message: ", message);
 
     const res = await fetch("/api/contact", {
       method: "POST",
@@ -97,8 +94,9 @@ export default function ContactForm() {
 
       <div className="bg-slate-100 flex flex-col">
         {error &&
-          error.map((e) => (
+          error.map((e, index) => (
             <div
+              key={index}
               className={`${
                 success ? "text-green-800" : "text-red-600"
               } px-5 py-2`}

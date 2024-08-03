@@ -25,7 +25,7 @@ const Contact = () => {
 
           {/* FAQ's */}
           <div className="p-8 mb-8">
-            <h2 className="text-3xl font-semibold mb-4">FAQ's</h2>
+            <h2 className="text-3xl font-semibold mb-4">FAQs</h2>
             <div className="text-gray-700">
               <h3 className="text-lg font-semibold mb-2">What services do you offer?</h3>
               <p className="mb-4">We offer a wide range of digital services including web development, UX/UI design, data analysis, cloud computing, cybersecurity, and more.</p>

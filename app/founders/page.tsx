@@ -101,22 +101,22 @@ const FoundersPage: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white rounded-lg shadow-lg p-6 transition duration-500 hover:scale-105 hover:shadow-xl">
                 <p className="text-black italic">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  vitae ipsum quis lorem dignissim consectetur."
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  vitae ipsum quis lorem dignissim consectetur.
                 </p>
                 <p className="text-black mt-2">- Client Name, Company Name</p>
               </div>
               <div className="bg-white rounded-lg shadow-lg p-6 transition duration-500 hover:scale-105 hover:shadow-xl">
                 <p className="text-black italic">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  vitae ipsum quis lorem dignissim consectetur."
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  vitae ipsum quis lorem dignissim consectetur.
                 </p>
                 <p className="text-black mt-2">- Client Name, Company Name</p>
               </div>
               <div className="bg-white rounded-lg shadow-lg p-6 transition duration-500 hover:scale-105 hover:shadow-xl">
                 <p className="text-black italic">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  vitae ipsum quis lorem dignissim consectetur."
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  vitae ipsum quis lorem dignissim consectetur.
                 </p>
                 <p className="text-black mt-2">- Client Name, Company Name</p>
               </div>

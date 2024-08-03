@@ -7,7 +7,7 @@ const TermsAndConditions = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white">
         <div className="max-w-3xl mx-auto text-center px-6">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Terms & Conditions</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Terms &amp; Conditions</h1>
           <p className="text-lg">Effective Date: 15th July 2024</p>
         </div>
       </section>
@@ -17,7 +17,7 @@ const TermsAndConditions = () => {
         <section className="mb-12">
           <h2 className="text-3xl font-semibold mb-4">Welcome to solvIT</h2>
           <p className="text-lg mb-8">
-            These Terms of Service ("Terms") govern your use of our software as a service ("Service") provided by us. By accessing or using our Service, you agree to be bound by these Terms.
+            These Terms of Service (&quot;Terms&quot;) govern your use of our software as a service (&quot;Service&quot;) provided by us. By accessing or using our Service, you agree to be bound by these Terms.
           </p>
         </section>
 
@@ -46,7 +46,7 @@ const TermsAndConditions = () => {
           <p className="text-lg mb-4">You agree to use the Service only for lawful purposes and in accordance with these Terms. You must not:</p>
           <ul className="list-disc pl-6 mb-8 space-y-2">
             <li>Use the Service in any way that violates any applicable federal, state, local, or international law or regulation.</li>
-            <li>Engage in any conduct that restricts or inhibits anyone's use or enjoyment of the Service, or which, as determined by us, may harm us or users of the Service or expose them to liability.</li>
+            <li>Engage in any conduct that restricts or inhibits anyone&#39;s use or enjoyment of the Service, or which, as determined by us, may harm us or users of the Service or expose them to liability.</li>
           </ul>
         </section>
 
@@ -88,7 +88,7 @@ const TermsAndConditions = () => {
 
         <section className="mb-12">
           <h2 className="text-3xl font-semibold mb-4">9. Changes to Terms</h2>
-          <p className="text-lg mb-4"><strong>a.</strong> We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will provide at least 10 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+          <p className="text-lg mb-4"><strong>a.</strong> We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will provide at least 10 days&apos; notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
           <p className="text-lg mb-8"><strong>b.</strong> We may modify the Terms, our Privacy Policy and our Cookies Policy from time to time. If we make material changes to it, we will provide you notice through our Services, or by other means, to provide you the opportunity to review the changes before they become effective. If you object to any changes, you may discontinue using our Services. Your continued use of our Services after we publish or send a notice about our changes to these terms means that you are consenting to the updated terms as of their effective date. What constitutes a material change will be determined at our sole discretion.</p>
         </section>
 

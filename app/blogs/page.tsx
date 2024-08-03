@@ -1,7 +1,15 @@
 import { notFound } from "next/navigation";
 import BlogCard from "@/components/BlogCard";
 
-async function getData() {
+interface Blog {
+  _id: string;
+  title: string;
+  author: string;
+  date: string;
+  content: string;
+}
+
+async function getData(): Promise<Blog[]> {
   const res = await fetch("http://localhost:3000/api/blogs", { cache: "no-store" });
   if (!res.ok) return notFound();
   return res.json();
@@ -19,16 +27,15 @@ const Blogs = async () => {
         </div>
       </section>
       <section className="mt-6 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <h2 className="text-3xl font-bold text-gray-900 mb-8">Latest Articles</h2>
-      <div className="p-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {data && data.map((blog) => (
-          <BlogCard key={blog._id} blog={blog} />
-        ))}
-      </div>
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">Latest Articles</h2>
+        <div className="p-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {data && data.map((blog: Blog) => (
+            <BlogCard key={blog._id} blog={blog} />
+          ))}
+        </div>
       </section>
     </>
   );
 };
 
 export default Blogs;
-

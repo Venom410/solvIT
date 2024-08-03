@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 const BlogDetail = () => {
-  const { id } = useParams();
+  const params = useParams() as { id: string };
+  const { id } = params || {};
   const [blog, setBlog] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
