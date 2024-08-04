@@ -22,7 +22,7 @@ const App = () => {
       <main className="flex-grow">
         <Hero />
 
-        <About setPlayState={setPlayState} />
+        <About  />
 
         <Link href="/services"> 
           <Title subTitle="Our Services" title="We Leverage The Power Of Cutting-Edge AI And Automation To Create Digital Experiences That Are Not Only Secure And Robust, But Also Deeply User-Centric, Empowering Our Clients To Thrive In The Digital Era." />

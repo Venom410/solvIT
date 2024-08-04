@@ -10,7 +10,7 @@ interface Blog {
 }
 
 async function getData(): Promise<Blog[]> {
-  const res = await fetch("http://localhost:3000/api/blogs", { cache: "no-store" });
+  const res = await fetch(`${process.env.NEXT_PUBLIC_DEPLOY_URL}/api/blogs`, { cache: "no-store" });
   if (!res.ok) return notFound();
   return res.json();
 }
