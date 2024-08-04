@@ -30,7 +30,7 @@ const Videoplayer: FC<VideoplayerProps> = ({ playState, setPlayState }) => {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [playState]);
+  }, [playState,handleKeyDown]);
 
   return (
     <div
